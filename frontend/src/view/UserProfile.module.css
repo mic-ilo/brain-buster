@@ -1,0 +1,192 @@
+.backgroundImage {
+  background-image: url("../assets/game-selection-background.gif");
+  background-size: cover;
+  width: 1200px;
+  height: 100vh;
+  position: absolute;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgba(94, 86, 86, 0.3); */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 8rem;
+  padding-left: 2rem;
+}
+
+.userprofile {
+  margin-right: 2rem;
+  background-color: rgba(65, 45, 45, 1);
+  color: #f000ff;
+  font-weight: bolder;
+  border: 0.2rem solid #f000ff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.02rem;
+  cursor: pointer;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userSubContainer {
+  background-color: rgba(117, 106, 106, 0.85);
+  padding: 5rem;
+  border: 0.3rem solid #f000ff;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  color: #feb100;
+}
+
+.deleteButton {
+  margin-top: 1rem;
+  width: 12rem;
+  font-weight: bolder;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #e73a0f;
+  color: white;
+  font-family: "Tektur", cursive;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.deleteButton:hover {
+  font-size: 1.05rem;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-right: 1rem;
+  color: #f000ff;
+}
+
+.input {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+
+  border: none;
+}
+
+.updateButton {
+  background-color: rgba(65, 45, 45, 0.8);
+  color: #f000ff;
+  font-weight: bolder;
+  border: 0.2rem solid #f000ff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 5rem;
+}
+
+.backButton {
+  margin-top: 1rem;
+  width: 16rem;
+  font-weight: bolder;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #f000ff;
+  color: white;
+  font-family: "Tektur", cursive;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.backButton:hover {
+  font-size: 1.1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmDelete {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 243, 243, 0.1);
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(8px);
+}
+
+.warningMessage {
+  background-color: white;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  border: 0.5rem solid #25c0db;
+}
+
+.confirmButton {
+  margin-top: 3rem;
+  width: 16rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+
+  color: white;
+  font-family: "Tektur", cursive;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.yes {
+  background-color: #f000ff;
+}
+.no {
+  background-color: #25c0db;
+}
+
+.changeSuccess {
+  color: #feb100;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 1rem;
+}
+.usernameTaken {
+  color: red;
+  font-weight: bolder;
+}

@@ -1,0 +1,76 @@
+.backgroundImage {
+  background-image: url("../assets/home-background.gif");
+  background-size: cover;
+  width: 1200px;
+  height: 100vh;
+  position: absolute;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.form {
+  background-color: rgba(158, 154, 154, 0.4);
+  width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+  border: 5px solid #25c0db;
+}
+
+.title {
+  padding-top: 2rem;
+  margin-bottom: 0;
+  color: #f000ff;
+}
+.logo {
+  width: 10rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 12rem;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  color: #f000ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.button {
+  margin-top: 1rem;
+  width: 12rem;
+  font-weight: bolder;
+  height: 2.7rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #feb100;
+  color: white;
+  font-family: "Tektur", cursive;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.button:hover {
+  font-size: 1.2rem;
+}
+
+.successfulRegister {
+  font-size: 1rem;
+  color: #feb100;
+}

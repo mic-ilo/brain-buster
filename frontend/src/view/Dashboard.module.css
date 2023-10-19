@@ -1,0 +1,79 @@
+.backgroundImage {
+  background-image: url("../assets/game-selection-background.gif");
+  background-size: cover;
+  width: 1200px;
+  height: 100vh;
+  position: absolute;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgba(94, 86, 86, 0.3); */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 8rem;
+  padding-left: 2rem;
+}
+
+.welcome {
+  color: #f000ff;
+  font-size: 1.2rem;
+}
+
+.username {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.userprofile {
+  margin-right: 2rem;
+  background-color: rgba(65, 45, 45, 0.5);
+  color: #f000ff;
+  font-weight: bolder;
+  border: 0.2rem solid #f000ff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.userprofile:hover {
+  background-color: rgba(65, 45, 45, 1);
+  font-size: 1.02rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 3rem;
+  width: 16rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #f000ff;
+  color: white;
+  font-family: "Tektur", cursive;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.button:hover {
+  font-size: 1.03rem;
+  font-weight: bolder;
+}

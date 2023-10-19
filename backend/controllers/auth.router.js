@@ -9,7 +9,6 @@ router.post("/login", async (req, res) => {
     const body = req.body;
 
     const token = await user.login(body.username, body.password);
-    console.log(token);
     if (token) {
       res.status(200).send(token);
     } else {

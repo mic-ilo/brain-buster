@@ -1,69 +1,137 @@
 .container {
   background-color: rgba(211, 207, 199, 0.5);
+
   display: flex;
+
   flex-direction: column;
+
   height: 20rem;
+
   width: 40rem;
+
   border: 0.5rem solid #feb100;
+
   border-radius: 1rem;
+
   position: relative; /* Needed for absolutely positioned pseudo-element */
+
   overflow: hidden; /* Hide overflowing animation */
 }
 
 .mainContainer {
   display: flex;
+
   justify-content: center;
 }
 
 .header {
   text-align: center;
+
   font-size: 1.5rem;
+
   padding-top: 1rem;
+
   font-weight: bold;
+
   padding-bottom: 0.5rem;
 }
 
 .selectCategory {
   border-radius: 0.5rem;
+
   height: 1.5rem;
+
   cursor: pointer;
+
   border: 0.2rem solid #f000ff;
+
   font-family: Tektur;
+
   background-color: rgba(22, 17, 5, 0.5);
+
   color: #feb100;
 }
+
 .selectContainer {
   text-align: center;
+
   font-size: 1rem;
 }
+
 /* Create a pseudo-element to create the animated border */
+
 .container::before {
   content: "";
+
   position: absolute;
+
   top: 0;
+
   left: 0;
+
   right: 0;
+
   bottom: 0;
+
   border: 0.3rem solid transparent;
+
   border-radius: 0.8rem;
+
   animation: borderAnimation 2s linear infinite;
+
   pointer-events: none;
 }
 
+.tableContainer {
+  overflow-x: auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+
+  text-align: center;
+}
+
+th,
+td {
+  text-align: center;
+
+  vertical-align: middle;
+
+  padding: 8px;
+}
+
+.notice {
+  font-weight: bolder;
+
+  color: #3e3b3e;
+}
+
 /* Keyframes for the border animation */
+
 @keyframes borderAnimation {
   0% {
     border-color: transparent transparent transparent transparent;
   }
+
   25% {
     border-color: #f000ff transparent transparent transparent;
   }
+
   50% {
     border-color: transparent #f000ff transparent transparent;
   }
+
   75% {
     border-color: transparent transparent #f000ff transparent;
   }
+
   100% {
     border-color: transparent transparent transparent #f000ff;
   }

@@ -32,12 +32,12 @@ export default function GameSelection() {
     <div className="backgroundBoard">
       <div className={styles.backgroundImage}>
         <div className="logo-container">
-          <img src="../src/assets/logo.gif" alt="logo" className="logo" />
+          <img src="../src/assets/logo.gif" alt="logo" className={styles.logo} />
         </div>
         <form onSubmit={handleStart} className={styles.formGameSelection}>
           <h1>Brain's ready? Let's roll</h1>
           <p className={styles.warning}>
-            You've got one shot; a wrong answer means game over.
+            You've got one shot! A wrong answer means game over.
           </p>
           <label htmlFor="selectCategory">SELECT CATEGORY</label>
           <select

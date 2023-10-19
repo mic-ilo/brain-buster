@@ -1,17 +1,12 @@
 .backgroundImage {
   background-image: url("../assets/game-selection-background.gif");
   background-size: cover;
-  width: 1200px;
+  width: 100%;
   height: 100vh;
-  position: absolute;
+  position: relative;
   background-repeat: no-repeat;
-  max-width: 1200px;
   min-width: 400px;
   margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   padding: 1rem;
 }
 
@@ -49,7 +44,7 @@
 
 .userSubContainer {
   background-color: rgba(117, 106, 106, 0.85);
-  padding: 5rem;
+  padding: 2rem;
   border: 0.3rem solid #f000ff;
   border-radius: 1rem;
   text-align: center;
@@ -57,39 +52,39 @@
 }
 
 .title {
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
   color: #feb100;
 }
 
 .deleteButton {
   margin-top: 1rem;
-  width: 12rem;
+  width: 10rem;
   font-weight: bolder;
-  height: 2.5rem;
+  height: 2rem;
   border-radius: 1rem;
   border: none;
   background-color: #e73a0f;
   color: white;
   font-family: "Tektur", cursive;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .deleteButton:hover {
-  font-size: 1.05rem;
+  font-size: .9rem;
 }
 
 .label {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bolder;
   margin-right: 1rem;
   color: #f000ff;
 }
 
 .input {
-  height: 2rem;
+  height: 1.5rem;
   width: 15rem;
   border-radius: 0.5rem;
   margin-right: 1rem;
@@ -101,32 +96,36 @@
 .updateButton {
   background-color: rgba(65, 45, 45, 0.8);
   color: #f000ff;
-  font-weight: bolder;
   border: 0.2rem solid #f000ff;
-  padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   width: 5rem;
+  height: 1.9rem;
+  font-weight: bold;
+}
+
+.updateButton:hover{
+  font-size: .9rem;
 }
 
 .backButton {
   margin-top: 1rem;
-  width: 16rem;
+  width: 12rem;
   font-weight: bolder;
-  height: 2.5rem;
+  height: 2rem;
   border-radius: 1rem;
   border: none;
   background-color: #f000ff;
   color: white;
   font-family: "Tektur", cursive;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: .8rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .backButton:hover {
-  font-size: 1.1rem;
+  font-size: .9rem;
 }
 
 .buttonsContainer {

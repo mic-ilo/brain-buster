@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import styles from "./GameStart.module.css";
 import { useNavigate } from "react-router-dom";
 import { PlayerContext } from "../components/PlayerContextProvider";
+import jwtDecode from "jwt-decode";
 
 export default function GameStart() {
   const [questions, setQuestions] = useState(null);
@@ -11,12 +12,23 @@ export default function GameStart() {
   const [isCorrect, setIsCorrect] = useState(false);
   const [isWrong, setIsWrong] = useState(false);
   const [score, setScore] = useState(0);
+  const [username, setUsername] = useState('');
   const playerName = localStorage.getItem("playerName");
   const [player, setPlayer] = useContext(PlayerContext);
   const [isSelected, setIsSelected] = useState(null);
   const navigate = useNavigate();
+ 
 
   let data;
+
+  useEffect(() => {
+    const jwtToken = localStorage.getItem("token");
+    const decodedToken = jwtDecode(jwtToken);
+    const decodedUsername = decodedToken.username;
+    const capitalizedUsername =
+      decodedUsername.charAt(0).toUpperCase() + decodedUsername.slice(1);
+    setUsername(capitalizedUsername);
+  }, []);
 
   // Function to shuffle options using Array.map function
   const shuffle = (array) => {
@@ -80,11 +92,11 @@ export default function GameStart() {
       <div className={styles.backgroundImage}>
         <div className={styles.header}>
           <div>
-            <p className={styles.playerDetails}>player: {player.username}</p>
+            <p className={styles.playerDetails}>player: {username}</p>
             <p className={styles.playerDetails}>score: {score} </p>
           </div>
           <div>
-            <img src="../src/assets/logo.gif" alt="logo" className="logo" />
+            <img src="../src/assets/logo.gif" alt="logo" className={styles.logo} />
           </div>
         </div>
         <p className={styles.question}>{question}</p>

@@ -20,7 +20,7 @@ export default function UserProfile(props) {
 
   return (
     <div className={styles.backgroundImage}>
-      UserProfile
+
       <header className={styles.nav}>
         <div>
           <img src={logo} className={styles.logo} />
@@ -34,7 +34,7 @@ export default function UserProfile(props) {
       </header>
       <div className={styles.userContainer}>
         <div className={styles.userSubContainer}>
-          <h1 className={styles.title}>Update User Profile: </h1>
+          <h1 className={styles.title}>User Profile </h1>
           <div>
             <label htmlFor="username" className={styles.label}>
               Update Username:

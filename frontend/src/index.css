@@ -2,13 +2,10 @@ body {
   font-family: "Tektur", cursive;
 }
 
-img.logo {
-  width: 10rem;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }

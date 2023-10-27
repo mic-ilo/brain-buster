@@ -1,10 +1,11 @@
 .backgroundImage {
   background-image: url("../assets/home-background.gif");
   background-size: cover;
-  width: 1200px;
+  width: 100%;
   height: 100vh;
-  position: absolute;
+  position: relative;
   background-repeat: no-repeat;
+  min-width: 400px;
   margin: 0 auto;
   top: 0;
   left: 0;

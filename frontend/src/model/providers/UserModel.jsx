@@ -5,7 +5,7 @@ class UserModel {
 
   async addUser(user) {
     try {
-      const response = await fetch("http://localhost:8888/user", {
+      const response = await fetch("https://brain-buster-be.onrender.com/user", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -41,7 +41,7 @@ class UserModel {
         username: username,
         password: password,
       };
-      const response = await fetch("http://localhost:8888/auth/login", {
+      const response = await fetch("https://brain-buster-be.onrender.com/auth/login", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -71,7 +71,7 @@ class UserModel {
   async getUser(username) {
     try {
       const response = await fetch(
-        `http://localhost:8888/user?username=${username}`,
+        `https://brain-buster-be.onrender.com/user?username=${username}`,
         {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, *cors, same-origin
@@ -118,7 +118,7 @@ class UserModel {
         password: password,
       };
 
-      const response = await fetch(`http://localhost:8888/user/${player}`, {
+      const response = await fetch(`https://brain-buster-be.onrender.com/user/${player}`, {
         method: "PUT", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -150,7 +150,7 @@ class UserModel {
       };
 
       const response = await fetch(
-        `http://localhost:8888/user/delete/${player}`,
+        `https://brain-buster-be.onrender.com/user/delete/${player}`,
         {
           method: "PUT", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, *cors, same-origin
